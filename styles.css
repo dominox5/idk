@@ -1,0 +1,668 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: #2196f3;
+	border-radius: 6px;
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+
+.hero
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(12,3,51,0.5),rgba(12,3,51,0.5));
+	position: relative;
+	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav
+{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 8%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .logo
+{
+	width: 80px;
+}
+
+nav ul li
+{
+	list-style: none;
+	display: inline-block;
+	margin-left: 40px; 
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+
+}
+.nav-list
+{
+	list-style: none;
+}
+
+.nav-item
+{
+	padding: 0 10px;
+}
+
+.nav-link
+{
+	text-decoration: none;
+	position: relative;
+}
+
+.nav-link:after
+{
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 4px;
+	background: #2196f3;
+	transition: .3s;
+}
+
+.nav-link:hover:after
+{
+	width: 100%;
+}
+
+
+.content
+{
+	text-align: center;
+}
+
+.content h1
+{
+	margin-bottom: 10px;
+	font-size: 70px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.typewriter
+{
+	color: #2196f3;
+}
+
+
+@media screen and (max-width: 1377px) {
+    p#zzz {
+        display: block;
+    }
+    span#xxx {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1378px) {
+    p#zzz {
+        display: none;
+    }
+    span#xxx {
+        display: inline;
+    }
+}
+
+.content h2
+{
+	color: #fff;
+	font-family: 'Poppins-Light';
+}
+
+.tlacitko
+{
+	margin-top: 22px;
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.tlacitko:hover
+{
+	color: #000000;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	transition-delay: 1s;
+}
+
+.tlacitko span
+{
+	position: absolute;
+	display: block;
+}
+
+.tlacitko span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#2196f3)
+}
+
+.tlacitko:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 1s;
+}
+
+.tlacitko span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#2196f3)
+}
+
+.tlacitko:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+
+.tlacitko span:nth-child(2)
+{
+	top: -100%;
+	right: 0%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#2196f3)
+}
+
+.tlacitko:hover span:nth-child(2)
+{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+.tlacitko span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#2196f3)
+}
+
+.tlacitko:hover span:nth-child(4)
+{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+
+.pozadi
+{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+
+
+
+.konzultace
+{
+	background-color: #080924;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+.konzultace-animace
+{
+	
+}
+
+.konzultace-text
+{
+	vertical-align: center;
+	margin-right: 10%;
+	margin-top: 250px;
+	
+
+}
+
+.konzultace-text h1
+{
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+.konzultace-text h2
+{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-family: 'Poppins-Light';
+}
+
+
+
+
+
+
+.vyvoj
+{
+	background-color: #080924;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+.vyvoj-animace
+{
+	
+}
+
+.vyvoj-text
+{
+	vertical-align: center;
+	margin-left: 7%;
+	margin-top: 250px;
+	
+
+}
+
+.vyvoj-text h1
+{
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+.vyvoj-text h2
+{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-family: 'Poppins-Light';
+}
+.vyvoj-text h2 p
+{
+	font-family: 'Poppins-Light';
+}
+
+
+.ficury
+{
+	background: #080924;
+
+}
+
+
+@font-face
+{
+	font-family: "Poppins-Light";
+	src: url(fonty/Poppins-Light.ttf);
+}
+.kontejner-na-ikony
+{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.ficury h1
+{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.ficury h2
+{
+	margin-top: 20px;
+
+}
+.jedna
+{
+	text-align: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.jedna:hover
+{
+	transform: scale(1.1);
+}
+.jedna h2
+{
+	color: white;
+	
+}
+.jedna h3
+{
+	color: white;
+	max-width: 300px;
+	font-family: 'Poppins-Light';
+	
+}
+.druha
+{
+	text-align: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.druha:hover
+{
+	transform: scale(1.1);
+}
+.druha h2
+{
+	color: white;
+	margin-left: 10px;
+}
+.druha h3
+{
+	color: white;
+	max-width: 300px;
+	font-family: 'Poppins-Light';
+	
+}
+.treti2
+{
+	text-align: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.treti2:hover
+{
+	transform: scale(1.1);
+}
+.treti2 h2
+{
+	color: white;
+	margin-left: 15px;
+}
+.treti2 h3
+{
+	color: white;
+	max-width: 300px;
+	font-family: 'Poppins-Light';
+	
+}
+.ctvrta
+{
+	text-align: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.ctvrta:hover
+{
+	transform: scale(1.1);
+}
+.ctvrta h2
+{
+	color: white;
+	margin-left: 1px;
+}
+.ctvrta h3
+{
+	color: white;
+	max-width: 300px;
+	font-family: 'Poppins-Light';
+	
+}
+
+.nic
+{
+	width: 100%;
+	height: 50px;
+	background-color: #080924;
+}
+
+.ceny
+{
+
+	width: 100%;
+	height: 700px;
+	background-color: #080924;}
+
+.ceny-hlavicka
+{
+	color: white;
+	align-items: center;
+	text-align: center;
+}
+
+.ceny-hlavicka h1
+{
+	font-size: 50px;
+}
+
+@media all and (max-width: 1600px)
+{
+.kontejner
+{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+}
+
+@media all and (min-width: 1601px)
+{
+.kontejner
+{
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(3,20vw);
+	justify-content: center;
+}
+}
+
+.prvni
+{
+	width: 300px;
+	height: 500px;
+	border-radius: 25px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: black;
+	align-items: center;
+	background-color: white;
+	margin: auto;
+	transition-duration: 500ms;
+	transition-property: width;
+}
+.prvni:hover
+{
+	width: 370px
+}
+
+.prvni-nadpis
+{
+	background-color: #2196f3;
+}
+
+.prvni h1
+{
+	color: #2196f3;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+.prvni h2
+{
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Poppins-Light';
+}
+
+.druhy
+{
+	width: 300px;
+	height: 500px;
+	border-radius: 25px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: black;
+	margin: auto;
+	align-items: center;
+	background-color: white;
+	transition-duration: 500ms;
+	transition-property: width;
+}
+.druhy:hover
+{
+	width: 370px
+}
+
+.druhy-nadpis
+{
+	background-color: #2196f3;
+}
+
+.druhy h1
+{
+	color: #2196f3;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.druhy h2
+{
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Poppins-Light';
+}
+
+.treti
+{
+	width: 300px;
+	height: 500px;
+	border-radius: 25px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: black;
+	margin: auto;
+	align-items: center;
+	background-color: white;
+	transition-duration: 500ms;
+	transition-property: width;
+}
+.treti:hover
+{
+	width: 370px
+}
+
+.treti-nadpis
+{
+	background-color: #2196f3;
+}
+
+.treti h1
+{
+	color: #2196f3;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.treti h2
+{
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Poppins-Light';
+}
+
+
+.kontakt
+{
+	background-color: #080924;
+	width: 100%;
+	height: 50vh;
+}
+´.haha
+{
+	display: grid;
+	grid-template-columns: repeat(2,20vw);
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.zuzu h1
+{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.zuzu h2
+{
+	color: white;
+	text-align: center;
+}
+
+.zuzu2
+{
+	height: 50px;
+	font-weight: 50px;
+	text-align: center;
+	color: white;
+}
+
+.tel
+{
+	width: 50px;
+	height: 50px;
+}
